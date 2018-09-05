@@ -14,9 +14,8 @@ public class Main {
         Date d = new Date();
 
         Calendar gdate = Calendar.getInstance();
-        gdate.set(2017, Calendar.JULY, 18);
+        gdate.set(2018, Calendar.MAY, 31);
         gdate.get(Calendar.DAY_OF_MONTH);
-
 
         Calendar cal = new GregorianCalendar();
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
@@ -25,8 +24,27 @@ public class Main {
 
         for (int i = 0; i < 60; i++) {
             System.out.println(dateFormat.format(gdate.getTime()) + " G ");
-            gdate.add(Calendar.DAY_OF_MONTH,4*1);
+            gdate.add(Calendar.DAY_OF_MONTH,2*1);
+            System.out.println(dateFormat.format(gdate.getTime()) + "   / kr ");
+            gdate.add(Calendar.DAY_OF_MONTH,2*1);
 
+        }
+
+    }
+
+    public class Test
+    {
+
+
+
+
+        public void Test () {}
+
+
+
+        public void run()
+        {
+            System.out.println("running!");
         }
 
     }
